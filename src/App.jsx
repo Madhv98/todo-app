@@ -6,7 +6,6 @@ function App() {
     // State Hook - `useState`
     const [newItem, setNewItem] = useState("");
     const [items, setItems] = useState([]);
-  
     const [showEdit, setShowEdit] = useState(-1);
     const [updatedText, setUpdatedText] = useState("");
   
@@ -70,8 +69,7 @@ function App() {
           value={newItem}
           onChange={(e) => setNewItem(e.target.value)}
         />
-  
-        {/* Add (button) */}
+
         <button onClick={() => addItem()}>Add</button>
   
         {/* 3. List of todos (unordered list) */}
